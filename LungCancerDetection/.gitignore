@@ -1,0 +1,53 @@
+# Python ve Makine Öğrenmesi için .gitignore dosyası
+
+# 1. Sanal Ortamlar (Virtual Environments)
+# Ekran görüntünüzdeki 'tfenv' gibi sanal ortam klasörleri asla paylaşılmamalıdır.
+# Bunlar sisteme özgüdür ve 'requirements.txt' dosyasından yeniden oluşturulabilir.
+/tfenv/
+/venv/
+/.venv/
+/env/
+/.env
+
+# 2. Python Cache ve Bytecode
+# Python'un çalışırken oluşturduğu geçici dosyalar.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 3. BÜYÜK DOSYALAR: Veri Setleri ve Eğitilmiş Modeller
+# Bu dosyalar Git reposunu aşırı derecede şişirir ve klonlama süresini uzatır.
+# README.md dosyasında verinin nereden indirileceği belirtilmelidir.
+/data/
+/chest_xray/
+*.h5
+*.model
+*.pb
+/saved_model/
+
+# 4. Üretilen Çıktılar ve Raporlar
+# Kod çalıştırıldığında otomatik olarak oluşturulan dosyalar.
+# Eğer reponuzda kalıcı olmasını istediğiniz bir resim varsa, bu satırları silip
+# sadece spesifik çıktı adını (örn: /training_history.png) ekleyebilirsiniz.
+*.png
+*.jpg
+*.jpeg
+*.log
+
+# 5. İşletim Sistemine Özgü Dosyalar
+# macOS, Windows veya Linux tarafından oluşturulan sistem dosyaları.
+.DS_Store
+Thumbs.db
+
+# 6. IDE ve Editör Yapılandırma Dosyaları
+# Her geliştiricinin kendi ayarları olabileceği için bunlar paylaşılmaz.
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 7. Paketleme ve Kurulum Klasörleri
+/dist/
+/build/
+*.egg-info/
