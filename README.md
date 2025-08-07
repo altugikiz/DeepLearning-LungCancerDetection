@@ -171,14 +171,6 @@ Eğitim tamamlandıktan sonra:
 - Tıbbi tanı için profesyonel doktor görüşü alınmalıdır
 - Veri seti Kaggle'dan indirilmelidir (büyük dosya boyutu nedeniyle repo'da bulunmaz)
 
-## 🤝 Katkıda Bulunma
-
-1. Fork yapın
-2. Feature branch oluşturun (`git checkout -b feature/AmazingFeature`)
-3. Commit yapın (`git commit -m 'Add some AmazingFeature'`)
-4. Branch'i push yapın (`git push origin feature/AmazingFeature`)
-5. Pull Request açın
-
 ## 📄 Lisans
 
 Bu proje eğitim amaçlı geliştirilmiştir.
